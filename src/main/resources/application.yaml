@@ -1,0 +1,21 @@
+server:
+  port: 8888
+spring:
+  application.name: configserver
+  cloud:
+    config:
+      enabled: true
+      server:
+        git:
+          defaultLabel: master
+          uri: https://github.com/calyr/configserver
+
+#spring:
+#  application.name: configserver
+#  cloud:
+#    config:
+#      enabled: true
+#      server:
+#        git:
+#          defaultLabel: master
+#          uri: /Users/calyr/freelancer/backend/ucb/ms-config
